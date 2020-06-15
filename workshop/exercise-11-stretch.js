@@ -11,3 +11,12 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+let chessBoard ='';
+for (let num = 0; num < 8; num ++){
+    if (num % 2 === 0 ) {
+        chessBoard = chessBoard + "#_#_#_#_\n"
+    } else {
+        chessBoard = chessBoard + "_#_#_#_#\n"
+    }
+}
+console.log(chessBoard)
