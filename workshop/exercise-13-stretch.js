@@ -21,3 +21,19 @@
 
 // (Correct answer: 12586269025)
 // (The numbers get big quickly!)
+
+// first two terms of fibonacci suite
+let fibonnaciNMinusTwo = 0
+let fibonnaciNMinusOne = 1;
+// initialize variable that will hold fibonacci computed values
+let fibonnaciN = 0;
+for (num = 2; num < 51 ; num++) {
+
+    fibonnaciN = fibonnaciNMinusTwo + fibonnaciNMinusOne;
+
+    fibonnaciNMinusTwo = fibonnaciNMinusOne;
+    fibonnaciNMinusOne = fibonnaciN
+
+}
+
+console.log(fibonnaciN);
