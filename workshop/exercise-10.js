@@ -7,3 +7,8 @@
 // #####
 // ######
 // #######
+let triangleBit = ""
+for (let num = 1 ; num < 8 ; num ++ ) {
+    triangleBit = triangleBit + "#"
+    console.log(triangleBit);
+}
