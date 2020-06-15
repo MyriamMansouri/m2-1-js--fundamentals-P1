@@ -12,3 +12,17 @@
 // NOTE: 1 and 2 are both prime numbers.
 
 // EXPECTED OUTPUT: [1, 2, 3, 5, 7, 11, 13, ...]
+let primeNumbers = [];
+for (let i = 1; i < 201; i++) {
+    let isPrime = true;
+    for (let j = 1; j < 201; j++) {
+        if(i % j === 0 && j !== 1 && j !== i ) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) {
+        primeNumbers.push(i);
+    }
+}
+console.log(primeNumbers);
